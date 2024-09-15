@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dt77gys3aiuxn"]
+
+[ext_resource type="Script" path="res://Scripts/MultiplayerManger.gd" id="1_7r3b5"]
+[ext_resource type="PackedScene" uid="uid://blgbyotr4ia6m" path="res://Scenes/main_menu.tscn" id="2_y13fj"]
+
+[node name="MultiplayerManger" type="Node"]
+script = ExtResource("1_7r3b5")
+
+[node name="CurrentScene" type="Node" parent="."]
+
+[node name="MainMenu" parent="CurrentScene" instance=ExtResource("2_y13fj")]
+
+[node name="Ui" type="Node" parent="."]
